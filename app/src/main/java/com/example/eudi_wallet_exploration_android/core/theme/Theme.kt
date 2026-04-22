@@ -1,6 +1,5 @@
-package com.example.eudi_wallet_exploration_android.ui.theme
+package com.example.eudi_wallet_exploration_android.core.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
