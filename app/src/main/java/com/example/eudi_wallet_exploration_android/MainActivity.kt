@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.eudi_wallet_exploration_android.ui.theme.EudiwalletexplorationandroidTheme
+import com.example.eudi_wallet_exploration_android.core.theme.EudiwalletexplorationandroidTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
