@@ -7,7 +7,7 @@
 ![Credential Format](https://img.shields.io/badge/Credential%20Format-SD--JWT-orange?logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?logoColor=white)
 
-## Overview
+## :mag: Overview
 
 This guide walks through building a very minimal but functional digital identity wallet ecosystem from scratch.
 The goal is not about production quality &mdash; it is to give you a genuine hard-won understanding of the credential
@@ -15,13 +15,13 @@ issuance and presentation flows.
 
 By the end, you will have built three core concepts:
 
-- **Issuer** &mdash; a Java Spring Boot backend that issues verifiable credentials to a wallet
+- **Issuer** &mdash; a Kotlin Spring Boot backend that issues verifiable credentials to a wallet
 - **Wallet** &mdash; an Android application that receives, stores, and presents credentials
-- **Verifier** &mdash; a Java Spring Boot backend that requests and validates credential presentations
+- **Verifier** &mdash; a Kotlin Spring Boot backend that requests and validates credential presentations
 
 ---
 
-## Key Concepts
+## :bulb: Key Concepts
 
 ### The Ecosystem
 
@@ -70,25 +70,42 @@ This is the protocol the **Verifier** uses to request proof from the **Wallet**.
 
 ---
 
-## Project Structure
+## :file_folder: Project Structure
 
 Two separate repositories:
 
 ```text
-eudi-wallet-exploration-backend     <- Java Spring Boot (Issuer and Verifier)
+eudi-wallet-exploration-backend     <- Kotlin Spring Boot (Issuer and Verifier)
 eudi-wallet-exploration-android     <- Kotlin + Jetpack Compose (Wallet)
 ```
 
 ---
 
-## Tech Stack
+## :hammer_and_wrench: Tech Stack
 
 | Component            | Technology               | Reason                                         |
 |----------------------|--------------------------|------------------------------------------------|
-| Backend              | Java + Spring Boot       | &mdash;                                        |
+| Backend              | Kotlin + Spring Boot     | &mdash;                                        |
 | Android              | Kotlin + Jetpack Compose | &mdash;                                        |
 | Credential Format    | SD-JWT (simplified)      | Used in EUDI ARF; mdoc is out if scope for now |
 | Crypto               | Nimbus JOSE + JWT        | Used in official EUDI Kotlin libraries         |
 | Networking (Android) | Ktor Client              | Consistent with EUDI library internals         |
+
+---
+
+## :classical_architecture: Android Architecture
+
+The wallet follows MVVM with a clean separation between UI, domain, and data layers.
+
+### Dependency Graph
+
+```mermaid
+graph TD
+    presentation --> domain
+    data --> domain
+    di --> presentation
+    di --> domain
+    di --> data
+```
 
 ---
