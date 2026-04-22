@@ -1,5 +1,10 @@
 # eudi-wallet-exploration-android
 
+![Android](https://img.shields.io/badge/platform-Android-green?logo=android)
+![Kotlin](https://img.shields.io/badge/language-Kotlin-7F52FF?logo=kotlin)
+![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?logo=jetpackcompose)
+![License](https://img.shields.io/badge/license-MIT-yellow)
+
 ## Overview
 
 This guide walks through building a very minimal but functional digital identity wallet ecosystem from scratch.
