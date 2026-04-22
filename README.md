@@ -93,7 +93,7 @@ eudi-wallet-exploration-android     <- Kotlin + Jetpack Compose (Wallet)
 
 ---
 
-## :classical_architecture: Android Architecture
+## :classical_building: Android Architecture
 
 The wallet follows MVVM with a clean separation between UI, domain, and data layers.
 
