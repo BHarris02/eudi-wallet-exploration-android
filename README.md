@@ -1,9 +1,11 @@
 # eudi-wallet-exploration-android
 
-![Android](https://img.shields.io/badge/platform-Android-green?logo=android)
-![Kotlin](https://img.shields.io/badge/language-Kotlin-7F52FF?logo=kotlin)
-![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?logo=jetpackcompose)
-![License](https://img.shields.io/badge/license-MIT-yellow)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-SDK%2036-green?logo=android&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-BOM%202024.09.00-4285F4?logo=jetpackcompose&logoColor=white)
+![Protocol](https://img.shields.io/badge/Protocol-OIDC4VCI%20%7C%20OpenID4VP-blue?logoColor=white)
+![Credential Format](https://img.shields.io/badge/Credential%20Format-SD--JWT-orange?logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?logoColor=white)
 
 ## Overview
 
